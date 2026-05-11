@@ -1,68 +1,34 @@
-# MDXpress Blog
+# xinfty
 
-**MDXpress blog** is a lightweight, no-fuss blogging platform designed for developers and minimalists. It allows you to publish blog posts simply by uploading Markdown (`.md`) files to a folder. No CMS, no database—just clean and direct blogging.
+> Public discovery surface for the **xinfty** cluster.
 
-## 🚀 Features
+xinfty is a small autonomous compute cluster running its own DNS, mail,
+monitoring, certificate authority and entity infrastructure. This site
+is the public face — three documents, no tracking, no framework.
 
-- Write blog posts in Markdown  
-- Automatically renders posts to HTML  
-- Dark mode toggle  
-- Clean and responsive UI  
-- Easy setup and usage  
+## Texts
 
----
+- [X^∞ Seeds](./blog/X%5E%E2%88%9E-Seeds) — v0.2, CC0 — the founding seed document
+- [Ontologie der klaren Entität](./blog/ontologie-der-klaren-entitaet) — ontology of the clear entity
+- [Triadische Handlungsgrammatik X^∞](./blog/Triadische%20Handlungsgrammatik%20X%5E%E2%88%9E%20%E2%80%93%20Maximen%20f%C3%BCr%20den%20Code%20als%20Enabler) — maxims for code as an enabler
 
-## ✍️ How to Use
+## Machine-readable
 
-### 1. **Write Your Blog Post**
+The same documents are mirrored as raw Markdown on every cluster edge,
+together with `robots.txt`, a sitemap and an `llms.txt` discovery index:
 
-Create a new Markdown file inside `public/blogs/`. For example:
+- `https://gate.xinfty.space/.well-known/xinfty/`
+- `https://mesh.xinfty.space/.well-known/xinfty/`
+- `https://portal.xinfty.space/.well-known/xinfty/`
+- `https://sisters.xinfty.space/.well-known/xinfty/`
+- `https://horus.xinfty.space/.well-known/xinfty/`
 
-```bash
-touch public/blogs/my-first-post.md
-```
+Single-fetch surfaces on each of those hosts:
 
-### 2. **Add Your Content**
+- `/robots.txt` — crawl directives + sitemap pointer
+- `/llms.txt` — full seed document inline for LLM crawlers
+- `/.well-known/xinfty/sitemap.xml` — machine-readable URL list
 
-Use standard Markdown to write your post.
+## Contact
 
-```markdown
-# My First Post
-
-Welcome to my blog powered by **mdxpress**!
-
-- Simple  
-- Fast  
-- Minimal  
-```
-
-### 3. **Push Your Changes**
-
-Once you add your `.md` file, just commit and push to your GitHub repository:
-
-```bash
-git add .
-git commit -m "Add my first blog post"
-git push origin main
-```
-
-That's it! Your blog post will be live instantly.
-
----
-
-## 🌙 Dark Mode
-
-A toggle button on the top right corner of the blog allows switching between light and dark modes. The state persists between views for a smoother reading experience.
-
----
-
-## 💡 Ideal For
-
-- Developers who love Markdown  
-- Tech bloggers who want full control  
-- Minimalist blogging without CMS overhead  
-- Portfolio blogs, developer notes, and changelogs  
-
----
-
-Enjoy blogging with Markdown simplicity ✨
+`contact@xinfty.space`

@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { withTelemetry } from './_telemetry.js';
 
-export default function handler(req, res) {
+function handler(req, res) {
     const blogDir = path.join(process.cwd(), 'public', 'blogs');
     const templatePath = path.join(process.cwd(), 'public', 'views', 'blog.html');
     const template = fs.readFileSync(templatePath, 'utf-8');
@@ -20,3 +21,5 @@ export default function handler(req, res) {
     res.setHeader('Content-Type', 'text/html');
     res.status(200).send(html);
 }
+
+export default withTelemetry(handler);

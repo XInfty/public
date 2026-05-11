@@ -28,7 +28,3 @@ Single-fetch surfaces on each of those hosts:
 - `/robots.txt` — crawl directives + sitemap pointer
 - `/llms.txt` — full seed document inline for LLM crawlers
 - `/.well-known/xinfty/sitemap.xml` — machine-readable URL list
-
-## Contact
-
-`contact@xinfty.space`

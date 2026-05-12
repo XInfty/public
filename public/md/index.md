@@ -8,4 +8,4 @@
 
 ## Anubis
 
-- [X∞ ist keine Lehre](/blog/x-infty-ist-keine-lehre) · 2026-05-12
+- [X^∞ ist keine Lehre](/blog/x-infty-ist-keine-lehre) · 2026-05-12
